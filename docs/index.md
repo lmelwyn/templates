@@ -1,5 +1,8 @@
 # Introduction
 
+!!! missing
+    still work in progress
+
 A template is a recipe with variables. It is the simplest form of personal productivity
 automation and it functions to reduce highly repetitive textual work. Be it documents,
 configuration files, pieces of codes or what have you. Fortunately, there is a sufficiently
