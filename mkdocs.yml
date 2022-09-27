@@ -1,0 +1,140 @@
+site_name: Templates
+site_url: https://lmelwyn.github.com//
+site_author: L. M. Jensen
+
+copyright: 2022 L. M. Jensen DTU Research Computing
+
+repo_url: https://github.com/lmelwyn/templates
+
+theme:
+  name: material
+  font:
+    text: Roboto
+  palette:
+    primary: teal
+    accent: teal
+  features:
+    - header.autohide
+
+# navigation
+nav:
+    - Home: index.md
+    - Templates: templates.md
+    - Cookiecutter: howto.md
+    - About: about.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# language selector
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lmelwyn
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/lmelwyn
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/lmelwyn
+#      – icon: fontawesome/brands/linkedin
+#        link: https://linkedin.com/lmelwyn
+#    – icon: fontawesome/brands/github
+#      link: https://github.com/lmelwyn
+#    – icon: fontawesome/brands/facebook
+#      link: https://facebook.com/squidfunk
+#    – icon: fontawesome/brands/instagram
+#      link: https://instagram.com/squidfunk
+#    – icon: fontawesome/brands/slack
+#      link: https://slack.com/squidfunk
+#    – icon: fontawesome/brands/medium
+#      link: https://medium.com/squidfunk
+#    – icon: fontawesome/brands/docker
+#      link: https://docker.com/squidfunk
+#    – icon: fontawesome/brands/behance
+#      link: https://twitter.com/squidfunk
+#    – icon: fontawesome/brands/pied-piper-alt
+#      link: https://twitter.com/squidfunk
+#    – icon: fontawesome/brands/product-hunt
+#      link: https://twitter.com/squidfunk
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+#    - name: Danish
+#      link: /da/
+#      lang: da
+
+# search selector
+plugins:
+  - search:
+      lang:
+        - en
+        - dk
+
+# markdown extensions
+markdown_extensions:
+  - admonition:
+  - codehilite:         # syntax coloring for code blocks
+  - def_list:           # adds syntax for definition lists
+  - footnotes:          # add footnotes
+  - attr_list:
+  - md_in_html:
+  - sane_lists:         # enables list items with multiple paragraphs
+  - tables:             # tables
+  - toc:                # builds a table of contents
+      permalink:
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+
+# pdf : https://pythonrepo.com/repo/orzih-mkdocs-with-pdf-python-documentation
+#plugins:
+#  - with-pdf
+        # author:     <- site_author
+        # copyright:  <- copyright
+        #
+        #cover: false
+        #back_cover: true
+        #cover_title: SSH Certificate Authority
+        #cover_subtitle: SUBTITLE TEXT
+        #custom_template_path: TEMPLATES PATH
+        #
+        #toc_title: TOC TITLE TEXT
+        #heading_shift: false
+        #toc_level: 3
+        #ordered_chapter_level: 2
+       #excludes_children:
+        #    - 'release-notes/:upgrading'
+        #    - 'release-notes/:changelog'
+        #
+        #exclude_pages:
+        #    - 'bugs/'
+        #    - 'appendix/contribute/'
+        #convert_iframe:
+        #    - src: IFRAME SRC
+        #      img: POSTER IMAGE URL
+        #      text: ALTERNATE TEXT
+        #    - src: ...
+        #two_columns_level: 3
+        #
+        #render_js: true
+        #headless_chrome_path: headless-chromium
+        #
+        #output_path: any-place/document.pdf
+        #enabled_if_env: ENABLE_PDF_EXPORT
+        #
+        #debug_html: true
+        #show_anchors: true
+        #verbose: true
+
